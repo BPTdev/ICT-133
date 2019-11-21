@@ -45,7 +45,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="exo1" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$/ExoTrad" port="8080">
+    <configuration name="133" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$/ExoDate" port="8080">
       <method v="2" />
     </configuration>
   </component>
@@ -59,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574330778978</updated>
-      <workItem from="1574330780058" duration="1332000" />
+      <workItem from="1574330780058" duration="2789000" />
     </task>
     <servers />
   </component>
