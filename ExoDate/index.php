@@ -12,6 +12,7 @@
  * Date: 21.11.2019
  * Time: 11:36
  */
+date_default_timezone_set('Asia/Tokyo');// Pour changer la date
 echo "<ol>";
 echo "<li>".date("l d F o")."</li>";
 echo "<li>".date("M d S o")."</li>";
