@@ -17,20 +17,28 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpDebugGeneral" xdebug_debug_port="10000" />
+  <component name="PhpWebServerValidation" path_to_validation_script="C:\Users\benoit.pierrehumbert\Documents\GitHub\ICT-133" selected_validation_type="LOCAL" web_path_to_validation_script="http://127.0.0.1/" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1TvBdrvr5WnAHZiVGKrz7Xnvxg0" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ExoTrad" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\benoit.pierrehumbert\Documents\GitHub\ICT-133\Puissance4\images" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -44,10 +52,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="133" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$/ExoDate" port="8080">
+  <component name="RunManager" selected="PHP Built-in Web Server.133">
+    <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ICT-133/index.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="133" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="8080">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/ExoBoucleNom/index.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="temp.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Temp/temp.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.temp.php" />
+        <item itemvalue="PHP Script.index.php" />
+        <item itemvalue="JavaScript Debug.index.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -59,7 +86,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574330778978</updated>
-      <workItem from="1574330780058" duration="3996000" />
+      <workItem from="1574330780058" duration="4593000" />
+      <workItem from="1574931238884" duration="4635000" />
+      <workItem from="1574936106067" duration="143000" />
+      <workItem from="1574936261376" duration="177000" />
+      <workItem from="1574936912606" duration="893000" />
+      <workItem from="1574937816158" duration="256000" />
+      <workItem from="1574938081825" duration="1742000" />
+      <workItem from="1575030876789" duration="5092000" />
     </task>
     <servers />
   </component>
@@ -71,10 +105,28 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/ExoDate/index.php</url>
+          <line>14</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/Temp/temp.php</url>
+          <line>14</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
