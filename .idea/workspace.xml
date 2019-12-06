@@ -16,6 +16,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
@@ -32,11 +33,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\benoit.pierrehumbert\Documents\GitHub\ICT-133\Calendrier\css" />
+      <recent name="C:\Users\benoit.pierrehumbert\Documents\GitHub\ICT-133\Calendrier" />
+      <recent name="C:\Users\benoit.pierrehumbert\Documents\GitHub\ICT-133\DWND\DWND1" />
       <recent name="C:\Users\benoit.pierrehumbert\Documents\GitHub\ICT-133\Puissance4\images" />
     </key>
   </component>
@@ -56,7 +62,7 @@
     <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ICT-133/index.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="133" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="8080">
+    <configuration name="133" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="8089">
       <method v="2" />
     </configuration>
     <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/ExoBoucleNom/index.php">
@@ -65,6 +71,12 @@
     <configuration name="temp.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Temp/temp.php">
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.index.php" />
+      <item itemvalue="PHP Built-in Web Server.133" />
+      <item itemvalue="PHP Script.index.php" />
+      <item itemvalue="PHP Script.temp.php" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="PHP Script.temp.php" />
@@ -93,7 +105,11 @@
       <workItem from="1574936912606" duration="893000" />
       <workItem from="1574937816158" duration="256000" />
       <workItem from="1574938081825" duration="1742000" />
-      <workItem from="1575030876789" duration="5092000" />
+      <workItem from="1575030876789" duration="5176000" />
+      <workItem from="1575363548838" duration="834000" />
+      <workItem from="1575536019269" duration="8564000" />
+      <workItem from="1575635704922" duration="1924000" />
+      <workItem from="1575637661037" duration="1766000" />
     </task>
     <servers />
   </component>
