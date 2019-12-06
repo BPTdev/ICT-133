@@ -19,6 +19,7 @@ $days = array("Mo", "Tu", "We", "Th", "Fr", "Sa", "Su");
 $day = 0;
 $date = date_create();
 $testday=date("l", strtotime("first day of next month"));
+$nbday=date("d", strtotime("last day of next month"));
 $decal=0;
 echo "<div class=\"month\" id='month'>";
 echo "<ul>";
@@ -52,7 +53,13 @@ if ($testday=="Saturday"){
 if ($testday=="Sunday"){
     $decal=6;
 }
-for ($i = 1; $i <= 5; $i++) {
+
+//Boucle pour deplacer
+//Marche pas
+for ($z=$nbday-$decal;$z==$nbday;$z++){
+    echo "<li>" . $z . "</li>";
+}
+for ($i = 1; $i<=5; $i++) {
     echo "<ul class=\"days\">";
     for ($k = 1; $k <= 7; $k++) {
         $day++;
@@ -63,10 +70,13 @@ for ($i = 1; $i <= 5; $i++) {
         }
 
         /*echo "<li>".date_format($date, 'd')."</li>";
-        date_modify($date, '+1 day');*/
-    }
+        date_modify($date, '+1 day');
+        */
+        }
     echo "</ul>";
 }
+$test=$nbday-$decal;
+echo "$test";
 ?>
 </body>
 </html>
