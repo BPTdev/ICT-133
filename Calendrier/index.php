@@ -19,8 +19,11 @@ $days = array("Mo", "Tu", "We", "Th", "Fr", "Sa", "Su");
 $day = 0;
 $date = date_create();
 $testday=date("l", strtotime("first day of next month"));
-$nbday=date("d", strtotime("last day of next month"));
+$nbday=date("d", strtotime("last day of last month"));
+$nbdaycurrent=date("d", strtotime("last day of this month"));
 $decal=0;
+$daylastmonth=0;
+$daynextmonth=0;
 echo "<div class=\"month\" id='month'>";
 echo "<ul>";
 echo "<li>" . date("F") . "<br>" . date("o") . "</li>";
@@ -54,29 +57,47 @@ if ($testday=="Sunday"){
     $decal=6;
 }
 
-//Boucle pour deplacer
-//Marche pas
-for ($z=$nbday-$decal;$z==$nbday;$z++){
-    echo "<li>" . $z . "</li>";
-}
-for ($i = 1; $i<=5; $i++) {
-    echo "<ul class=\"days\">";
-    for ($k = 1; $k <= 7; $k++) {
-        $day++;
-        if ($day == date_format($date, 'd')) {
-            echo "<li><span class=\"active\">" . date_format($date, 'd') . "</span></li>";
-        } else {
-            echo "<li>" . $day . "</li>";
-        }
 
-        /*echo "<li>".date_format($date, 'd')."</li>";
-        date_modify($date, '+1 day');
-        */
+for ($i = 1; $i<=$nbdaycurrent; $i++) {
+    if ($day%7==0){
+        echo "<ul class=\"days\">";
+    }
+    $day++;
+    if ($daylastmonth==0){
+        for ($z=$nbday-$decal-2;$z<=$nbday+1;$z++){
+            echo "<li><span class=\"lastmonth\">" . $z . "</span></li>";
         }
-    echo "</ul>";
+        $daylastmonth=2;
+    }
+
+    if ($day == date_format($date, 'd')) {
+        echo "<li><span class=\"active\">" . date_format($date, 'd') . "</span></li>";
+    }else {
+        echo "<li>" . $day . "</li>";
+    }
+
+
+    if ($day%7==0){
+        echo "<br>";
+        echo "</ul>";
+    }
+
 }
-$test=$nbday-$decal;
+if ($daynextmonth==0){
+    for ($z=1;$z<=date("N", strtotime("last day of this month"))+2;$z++){
+        echo "<li><span class=\"lastmonth\">" . $z . "</span></li>";
+    }
+    $daynextmonth=2;
+}
+echo "</ul>";
+/*echo "<li>".date_format($date, 'd')."</li>";
+date_modify($date, '+1 day');
+*/
+$test=$nbday-$decal-1;
 echo "$test";
+echo "<br><br><br>";
+
 ?>
 </body>
 </html>
+
