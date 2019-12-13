@@ -1,0 +1,14 @@
+.cmd_l{
+    text-decoration: underline;
+    margin-right: 5px;
+}
+.cmd_r{
+    text-decoration: underline;
+    margin-left: 5px;
+}
+.cmd_l:hover{
+     color: indianred;
+ }
+.cmd_r:hover{
+    color: indianred;
+}

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/css.css">
     <script src="js/js.js" type="text/javascript"></script>
     <title>Calendrier</title>
 </head>
@@ -24,11 +25,15 @@ $nbdaycurrent=date("d", strtotime("last day of this month"));
 $decal=0;
 $daylastmonth=0;
 $daynextmonth=0;
+
+
 echo "<div class=\"month\" id='month'>";
 echo "<ul>";
-echo "<li>" . date("F") . "<br>" . date("o") . "</li>";
+echo "<li><div id='cmd_l' ><h1><span class=\"cmd_l\"><</span><span class=\"cmd_r\">></span></h1></div>" . date("F") . "<br>" . date("o") . "</li>";
 echo "</ul>";
 echo "</div>";
+
+
 echo "<ul class=\"weekdays\">";
 
 for ($i = 0; $i <= count($days); $i++) {
@@ -57,11 +62,10 @@ if ($testday=="Sunday"){
     $decal=6;
 }
 
+echo "<ul class=\"days\">";
 
+//Affiche les jour du mois passé pour completer la premiere semaine du mois present
 for ($i = 1; $i<=$nbdaycurrent; $i++) {
-    if ($day%7==0){
-        echo "<ul class=\"days\">";
-    }
     $day++;
     if ($daylastmonth==0){
         for ($z=$nbday-$decal-2;$z<=$nbday+1;$z++){
@@ -69,7 +73,7 @@ for ($i = 1; $i<=$nbdaycurrent; $i++) {
         }
         $daylastmonth=2;
     }
-
+//Affiche les jour du mois présent
     if ($day == date_format($date, 'd')) {
         echo "<li><span class=\"active\">" . date_format($date, 'd') . "</span></li>";
     }else {
@@ -77,24 +81,24 @@ for ($i = 1; $i<=$nbdaycurrent; $i++) {
     }
 
 
-    if ($day%7==0){
-        echo "<br>";
-        echo "</ul>";
-    }
-
 }
+//Affiche les jour du prochain mois pour completer la derniere semaine du mois present
 if ($daynextmonth==0){
-    for ($z=1;$z<=date("N", strtotime("last day of this month"))+2;$z++){
+    for ($z=1;$z<=date("N", strtotime("last day of this month"))+3;$z++){
         echo "<li><span class=\"lastmonth\">" . $z . "</span></li>";
     }
     $daynextmonth=2;
 }
+
+
+
+
+
 echo "</ul>";
-/*echo "<li>".date_format($date, 'd')."</li>";
-date_modify($date, '+1 day');
-*/
-$test=$nbday-$decal-1;
-echo "$test";
+
+
+
+echo "";
 echo "<br><br><br>";
 
 ?>
