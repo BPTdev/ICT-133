@@ -7,16 +7,13 @@
     <title>Calendrier</title>
 </head>
 <body>
+<h4>Donnez-moi l'année et le mois actuels</h4>
+<form action="index2.php" method="post">
+    Date :
+    <input type="text" name="dateselec" value="<?php echo date('Y-m-d'); ?>" />
+    <input type="submit" name="submit" >
+</form>
 
-<?php
-echo"<h4>Donnez-moi l'année et le mois actuels</h4>";
-echo"<form action=\"post\">";
-echo"<h2>Année :</h2><input type=\"text\" name=\"year\" placeholder=\"Année\"><br><hr>";
-echo"<h2>Mois : </h2><input type=\"text\" name=\"month\" placeholder=\"Mois\"><br>";
-echo"<input type=\"submit\" name=\"submit\" >";
-echo"</form>"
-
-?>
 </body>
 </html>
 

@@ -81,3 +81,12 @@ body {font-family: Verdana, sans-serif;}
 .d-none{
     display: none;
 }
+.button{
+    font-size: 2em;
+    text-decoration: underline;
+    background-color: #1abc9c;
+    border: 0px;
+}
+.button:hover{
+    color: indianred;
+}

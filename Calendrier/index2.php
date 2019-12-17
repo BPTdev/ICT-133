@@ -16,22 +16,42 @@
  * Date: 05.12.2019
  * Time: 10:01
  */
+function get_date($get){//fonction pour trouver la date en fonction du post
+    $date = date('Y-m-d', strtotime($get));
+    return $date;
+}
+
 $days = array("Mo", "Tu", "We", "Th", "Fr", "Sa", "Su");
 $day = 0;
-$date = date_create();
+$get_from_index=$_POST["dateselec"];
 $testday=date("l", strtotime("first day of next month"));
-$nbday=date("d", strtotime("last day of last month"));
+date("t/m/Y", strtotime(date('Y-m')." -1 month"));
+$firstday=date('Y-m-01', strtotime(get_date($get_from_index)));
+//$nbday=date("d", strtotime("last day of last month"));
+$nbday=date("t", strtotime(get_date($get_from_index)));
 $nbdaycurrent=date("d", strtotime("last day of this month"));
-$decal=0;
+$decal= date('N', strtotime($firstday));
 $daylastmonth=0;
 $daynextmonth=0;
 
 
+
 echo "<div class=\"month\" id='month'>";
-echo "<ul>";
-echo "<li><div id='cmd_l' ><h1><span class=\"cmd_l\"><</span><span class=\"cmd_r\">></span></h1></div>" . date("F") . "<br>" . date("o") . "</li>";
-echo "</ul>";
+echo "<form>";
+echo "<h1>Attention les 2 bouttons ci-dessous ne marchent pas encore...</h1>";
+echo "<div id='cmd_l' ><h1><input type=\"submit\" class=\"button\" name=\"prevmonth\" value=\"<\" /><input type=\"submit\" class=\"button\" name=\"nextmonth\" value=\">\" /></h1></div>" . date("F",strtotime(get_date($get_from_index))) . "<br>" . date("o",strtotime(get_date($get_from_index))) ;
+echo "</form>";
 echo "</div>";
+if (isset($_POST['action'])) {//----------------------------------------------
+    switch ($_POST['action']) {
+        case '<':
+            date_modify(get_date($get_from_index), "-1 month");
+            break;
+        case '>':
+            date_modify(get_date($get_from_index), "+1 month");
+            break;
+    }
+}
 
 
 echo "<ul class=\"weekdays\">";
@@ -40,27 +60,6 @@ for ($i = 0; $i <= count($days); $i++) {
     echo "<li>" . $days[$i] . "</li>";
 }
 echo "</ul>";
-if ($testday=="Monday"){
-    $decal=0;
-}
-if ($testday=="Tuesday"){
-    $decal=1;
-}
-if ($testday=="Wednesday"){
-    $decal=2;
-}
-if ($testday=="Thursday"){
-    $decal=3;
-}
-if ($testday=="Friday"){
-    $decal=4;
-}
-if ($testday=="Saturday"){
-    $decal=5;
-}
-if ($testday=="Sunday"){
-    $decal=6;
-}
 
 echo "<ul class=\"days\">";
 
@@ -68,14 +67,14 @@ echo "<ul class=\"days\">";
 for ($i = 1; $i<=$nbdaycurrent; $i++) {
     $day++;
     if ($daylastmonth==0){
-        for ($z=$nbday-$decal-2;$z<=$nbday+1;$z++){
+        for ($z=$nbday-$decal;$z<=$nbday;$z++){
             echo "<li><span class=\"lastmonth\">" . $z . "</span></li>";
         }
         $daylastmonth=2;
     }
 //Affiche les jour du mois présent
-    if ($day == date_format($date, 'd')) {
-        echo "<li><span class=\"active\">" . date_format($date, 'd') . "</span></li>";
+    if ($day == date_format(get_date($get_from_index), 'd')) {
+        echo "<li><span class=\"active\">" . date_format(get_date($get_from_index), 'd') . "</span></li>";
     }else {
         echo "<li>" . $day . "</li>";
     }
@@ -89,16 +88,8 @@ if ($daynextmonth==0){
     }
     $daynextmonth=2;
 }
-
-
-
-
-
 echo "</ul>";
-
-
-
-echo "";
+echo "get_date($get_from_index)";
 echo "<br><br><br>";
 
 ?>
