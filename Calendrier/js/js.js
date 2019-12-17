@@ -1,7 +1,11 @@
 document.addEventListener('DOMContentLoaded',init);
 function init() {
-    month.addEventListener('hover',changemonth);
+    cmd_1.addEventListener('click',changemonthminus);
+    cmd_2.addEventListener('click',changemonthplus);
 }
-function changemonth() {
+function changemonthminus() {
+
+}
+function changemonthplus() {
 
 }
