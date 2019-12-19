@@ -16,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -29,6 +29,7 @@
   <component name="PhpWebServerValidation" path_to_validation_script="C:\Users\benoit.pierrehumbert\Documents\GitHub\ICT-133" selected_validation_type="LOCAL" web_path_to_validation_script="http://127.0.0.1/" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
   <component name="ProjectId" id="1TvBdrvr5WnAHZiVGKrz7Xnvxg0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -40,6 +41,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\benoit.pierrehumbert\Documents\GitHub\ICT-133\MVC\view\error" />
       <recent name="C:\Users\benoit.pierrehumbert\Documents\GitHub\ICT-133\Calendrier" />
       <recent name="C:\Users\benoit.pierrehumbert\Documents\GitHub\ICT-133\Calendrier\css" />
       <recent name="C:\Users\benoit.pierrehumbert\Documents\GitHub\ICT-133\DWND\DWND1" />
