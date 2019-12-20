@@ -27,7 +27,7 @@
   </component>
   <component name="PhpDebugGeneral" xdebug_debug_port="10000" />
   <component name="PhpWebServerValidation" path_to_validation_script="C:\Users\benoit.pierrehumbert\Documents\GitHub\ICT-133" selected_validation_type="LOCAL" web_path_to_validation_script="http://127.0.0.1/" />
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1TvBdrvr5WnAHZiVGKrz7Xnvxg0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
@@ -116,6 +116,8 @@
       <workItem from="1576240400012" duration="5161000" />
       <workItem from="1576577663801" duration="1866000" />
       <workItem from="1576615698459" duration="6216000" />
+      <workItem from="1576766514436" duration="294000" />
+      <workItem from="1576845491616" duration="4992000" />
     </task>
     <servers />
   </component>
